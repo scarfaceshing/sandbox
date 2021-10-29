@@ -1,9 +1,12 @@
 <template>
 <v-app>
- <v-navigation-drawer app>
-
-  </v-navigation-drawer>
- <template v-slot:default></template>
+  <v-app-bar app>
+     <v-app-bar-nav-icon></v-app-bar-nav-icon>
+    <v-toolbar-title>Collapsing Bar</v-toolbar-title>
+  </v-app-bar>
+ <v-main>
+  <template v-slot:default></template>
+ </v-main>
 </v-app>
 </template>
 

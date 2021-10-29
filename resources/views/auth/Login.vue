@@ -1,6 +1,6 @@
 <template>
  <login-layout>
-
+  <h1>Hi</h1>
  </login-layout>
 </template>
 

@@ -46,6 +46,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -203,7 +206,7 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("login-layout")
+  return _c("login-layout", [_c("h1", [_vm._v("Hi")])])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -229,18 +232,30 @@ var render = function () {
   var _c = _vm._self._c || _h
   return _c(
     "v-app",
-    {
-      scopedSlots: _vm._u([
-        {
-          key: "default",
-          fn: function () {
-            return undefined
+    [
+      _c(
+        "v-app-bar",
+        { attrs: { app: "" } },
+        [
+          _c("v-app-bar-nav-icon"),
+          _vm._v(" "),
+          _c("v-toolbar-title", [_vm._v("Collapsing Bar")]),
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c("v-main", {
+        scopedSlots: _vm._u([
+          {
+            key: "default",
+            fn: function () {
+              return undefined
+            },
+            proxy: true,
           },
-          proxy: true,
-        },
-      ]),
-    },
-    [_c("v-navigation-drawer", { attrs: { app: "" } })],
+        ]),
+      }),
+    ],
     1
   )
 }
